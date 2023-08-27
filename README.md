@@ -9,10 +9,21 @@
 
 
 ## batch 파일 실행하여 진단 결과 확인
-> ![0](https://github.com/hanmin0512/batch_SRV-028/assets/37041208/15876262-93d3-4712-a5ba-ce0062bf8289)
+> ![0](https://github.com/hanmin0512/batch_SRV-028/assets/37041208/5bb44535-5ffe-4cc3-ba48-2ebb4e062f84)
+
 - 검사결과 세션 타임아웃 미설정 으로 취약점 발견.
 
 ## 대처 방안
 - 시작> 실행> GPEDIT.MSC> Computer Configuration> administrative Templates> Windows Components> Remote Desktop Services> Remote Desktop Session Host> Session Time Limits 에서
 -  Set time limit for disconnected sessions 더블클릭하여 enable체크, 15분 설정
-> 
+> ![1](https://github.com/hanmin0512/batch_SRV-028/assets/37041208/23f2b71a-f65f-43e5-855b-520538dfa9e1)
+> ![2](https://github.com/hanmin0512/batch_SRV-028/assets/37041208/e8f11169-706a-48bc-aa62-8e43279bf2de)
+
+## 대처 후 진단 결과 확인
+> ![3](https://github.com/hanmin0512/batch_SRV-028/assets/37041208/c52fbfef-6849-42df-9e19-1294ac9a6622)
+- 0xdbba0 10진수화 하면 900000초로 15분
+
+>![4](https://github.com/hanmin0512/batch_SRV-028/assets/37041208/e429d678-ff00-4d9f-a2be-1c1d7ed50667)
+
+
+
